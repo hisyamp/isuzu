@@ -194,13 +194,14 @@ https://templatemo.com/tm-580-woox-travel
                     <h4>Segera hubungi saya, Harits!</h4>
                 </div>
                 <div class="col-lg-4">
-                    <div class="border-button">
-                        <a href="../reservation.html">Book Yours Now</a>
+                    <div class="border-button" onclick="redirectWa()">
+                        <a href="#">Book Yours Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div onclick="redirectWa()" class="wafixed"> <img src="../assets/images/wapng.png" alt="" class="img-wa"></div>
 
     <footer>
         <div class="container">
@@ -230,6 +231,10 @@ https://templatemo.com/tm-580-woox-travel
             $(".option").removeClass("active");
             $(this).addClass("active");
         });
+        function redirectWa() {
+            // location.replace("https://wa.me/+6281325213972?text=Halo kak Harits, saya ingin order unit di Astra Isuzu Surabaya")
+            window.open("https://wa.me/+6281325213972?text=Halo kak Harits, saya ingin order unit di Astra Isuzu Surabaya", "_blank");
+        }
     </script>
 
 </body>

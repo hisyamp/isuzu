@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-  <title>WoOx Travel Bootstrap 5 Theme</title>
+  <title>Isuzu Surabaya</title>
 
   <!-- Bootstrap core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -398,6 +398,8 @@ https://templatemo.com/tm-580-woox-travel
       </div>
     </div>
   </div>
+  <a class="wafixed" href="https://wa.me/6281252924371" style="text-decoration:none"><i
+      class="icon brands fa-whatsapp fa-3x"></i></a>
 
   <footer>
     <div class="container">
@@ -434,6 +436,15 @@ https://templatemo.com/tm-580-woox-travel
     $('nav .controls label').click(function () {
       clearInterval(bannerTimer);
       bannerTimer = setInterval(bannerSwitcher, 5000)
+    });
+
+    $(function () {
+      $("#top").on('click', function () {
+        var position = $("#image").offset().top;
+        $("HTML, BODY").animate({
+          scrollTop: position
+        }, 1000);
+      });
     });
   </script>
 
